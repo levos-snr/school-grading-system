@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    padding-top: 56px;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-nav {
+    align-items: center;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.generated-report {
+    margin-top: 20px;
+}

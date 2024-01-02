@@ -1,0 +1,46 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.logo {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.user-icon {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

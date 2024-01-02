@@ -1,0 +1,32 @@
+body {
+    padding-top: 56px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#totalCoursesMessage {
+    font-weight: bold;
+}

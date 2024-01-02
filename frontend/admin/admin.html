@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/logo.png" alt="Logo" class="logo"> University System</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <input class="form-control" type="text" placeholder="Search">
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-file-earmark-plus"></i> Create New Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-envelope"></i> Message</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-bell"></i> Notification</a>
+                </li>
+                <li class="nav-item">
+                    <div class="user-info">
+                        <i class="bi bi-person-circle user-icon"></i>
+                        <span class="user-name">Admin</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('semester')"><i class="bi bi-calendar-check"></i> Semester Passes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('year')"><i class="bi bi-calendar"></i> Year Passes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('semester-fails')"><i class="bi bi-x-circle"></i> Semester Fails</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('year-fails')"><i class="bi bi-x-circle-fill"></i> Year Fails</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('specials')"><i class="bi bi-exclamation-triangle"></i> Special Cases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('missing-marks')"><i class="bi bi-file-earmark-excel"></i> Missing Marks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('all-missing')"><i class="bi bi-file-earmark-minus"></i> All Missing Marks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="generateReport('second-attempt')"><i class="bi bi-arrow-repeat"></i> Second Attempt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showAddStudentForm()"><i class="bi bi-person-plus"></i> Add Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showAddCourseForm()"><i class="bi bi-book-plus"></i> Add Course</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showAddSemesterForm()"><i class="bi bi-calendar-plus"></i> Add Semester</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showAddLecturerForm()"><i class="bi bi-person-plus"></i> Add Lecturer</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="generated-report">
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

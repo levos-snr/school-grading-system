@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lecturer.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <title>Lecturer Interface</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/logo.png" alt="Logo" class="logo"> University System</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <div class="user-info">
+                        <i class="bi bi-person-circle user-icon"></i> 
+                        <span class="user-name">Lecturer</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Enter Assignment Scores</h2>
+        <form id="assignmentEntryForm">
+            <div class="form-group">
+                <label for="courseIDAssignment">Course ID</label>
+                <input type="text" class="form-control" id="courseIDAssignment" placeholder="Enter Course ID" required>
+            </div>
+            <div class="form-group">
+                <label for="studentIDAssignment">Student ID</label>
+                <input type="text" class="form-control" id="studentIDAssignment" placeholder="Enter Student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="assignment1">Assignment 1 Score</label>
+                <input type="number" class="form-control" id="assignment1" placeholder="Enter Score for Assignment 1" required>
+            </div>
+            <div class="form-group">
+                <label for="assignment2">Assignment 2 Score</label>
+                <input type="number" class="form-control" id="assignment2" placeholder="Enter Score for Assignment 2" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitAssignmentScores()">Submit Assignment Scores</button>
+        </form>
+
+        <hr>
+
+        <h2>Enter CAT Scores</h2>
+        <form id="catEntryForm">
+            <div class="form-group">
+                <label for="courseIDCat">Course ID</label>
+                <input type="text" class="form-control" id="courseIDCat" placeholder="Enter Course ID" required>
+            </div>
+            <div class="form-group">
+                <label for="studentIDCat">Student ID</label>
+                <input type="text" class="form-control" id="studentIDCat" placeholder="Enter Student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="cat1">CAT 1 Score</label>
+                <input type="number" class="form-control" id="cat1" placeholder="Enter Score for CAT 1" required>
+            </div>
+            <div class="form-group">
+                <label for="cat2">CAT 2 Score</label>
+                <input type="number" class="form-control" id="cat2" placeholder="Enter Score for CAT 2" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitCatScores()">Submit CAT Scores</button>
+        </form>
+
+        <hr>
+
+        <h2>Enter Exam Score</h2>
+        <form id="examEntryForm">
+            <div class="form-group">
+                <label for="courseIDExam">Course ID</label>
+                <input type="text" class="form-control" id="courseIDExam" placeholder="Enter Course ID" required>
+            </div>
+            <div class="form-group">
+                <label for="studentIDExam">Student ID</label>
+                <input type="text" class="form-control" id="studentIDExam" placeholder="Enter Student ID" required>
+            </div>
+            <div class="form-group">
+                <label for="exam">Exam Score</label>
+                <input type="number" class="form-control" id="exam" placeholder="Enter Exam Score" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitExamScore()">Submit Exam Score</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./lecturer.js"></script>
+</body>
+</html>

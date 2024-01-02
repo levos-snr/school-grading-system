@@ -1,0 +1,25 @@
+GET http://localhost:3000/student
+
+###
+
+POST http://localhost:3000/student/register-course
+Content-Type: application/json
+
+{
+    "name": "Lewis John",
+    "studentId": "22/07120",
+    "registeredCourses": {
+        "semester1": [
+            {
+                "courseCode": "IST4040",
+                "courseName": "Information"
+            }
+        ]
+    }
+}
+
+
+###
+GET  http://localhost:3000/student/18
+
+###
